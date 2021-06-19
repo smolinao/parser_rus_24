@@ -32,7 +32,7 @@ class Parser:
     def _run(self):
         data_string = ''
         for i in self.ITEMS:
-            item = i.find('a', href=True)
+            item = i.find('a')
             itemName = item.find('h3').text.strip()
             # item_city = item.find('div', class_='r24Label r24_city')  TODO если нужен город
             print('{}'.format(itemName))
